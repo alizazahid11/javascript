@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./main.js"></script>
+    <h2>Practicing Buttons</h2>
+    <input type="button" value="Click" onclick="alert('Welcome user!');">
+    <h2>Buttons with links</h2>
+    <a href="#"><img src="summary-button-sign-key-push-banner-180930688.jpg" alt="" height="60px" width="60px"></a>
+    <img src="https://github.com/farzeenshahid/javascript/blob/main/js6/Gallery/greet.png?raw=true" onclick="alert('Hello World!')" alt="" height="60px" width="60px";>
+    <h2>Buttons with changable images</h2>
+    <img src="https://github.com/farzeenshahid/javascript/blob/main/js6/Gallery/before.jpeg?raw=true" onmouseover="src='tree.jpg'">
+    <h2 onmouseover="alert('Be sure to get your shopping done today, ')">It's doomsday tommorow</h2>
+    <h2>Changing color with mouseover</h2>
+    <a href="./index.html" onmouseover="this.style.color='green';">Home Page</a>
+    <p id="loris" onmouseover="expand();">Slow Loris: Mouse over for more info</p>
+    <img src="https://github.com/farzeenshahid/javascript/blob/main/js6/Gallery/before.jpeg?raw=true" onmouseover="src='after.jpeg'"onmouseout="src='before.jpeg'">
+    <h2>Fields</h2>
+    Email:<br>
+    <input type="text" size="30" onfocus="this.style.backgroundColor='blue';">
+    Email:<br>
+    <input type="text" size="30" onfocus="this.style.backgroundColor='blue';"onBlur="this.style.backgroundColor='white';">
+    Email:<br>
+    <input type="text" size="30" onfocus="makeFieldYellow();" onBlur="makeFieldWhite();">  
+    <form onSubmit="checkAddress('email');">
+        Email:
+        <input type="text" id="email">
+        <input type="submit" value="Submit">
+    </form>
+    <form>
+        ZIP:<br>
+        <input type="text" id="zip" onBlur="fillCity();"><br>
+        City:<br>
+        <input type="text" id="city">
+    </form>
+    <form>
+        City:<br>
+        <input type="text" id="City" onBlur="fillCountry();"><br>
+        Country:<br>
+        <input type="text" id="country">
+    </form>
+
+         
+
+</body>
+</html>
